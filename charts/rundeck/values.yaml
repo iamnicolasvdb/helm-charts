@@ -48,6 +48,9 @@ database:
   # @see https://github.com/EugenMayer/helm-charts/tree/main/charts/rundeck#database
   useInternalH2db: false
 
+bootstrapCustom: |-
+  #!/bin/bash
+
 securityContext:
   # keep those settings until you really know what you are doing here
   fsGroup: 0

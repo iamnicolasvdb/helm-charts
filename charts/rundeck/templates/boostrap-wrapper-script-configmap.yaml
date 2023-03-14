@@ -3,4 +3,6 @@ kind: ConfigMap
 metadata:
   name: boostrap-wrapper-script
 data:
+  bootstrap-custom.sh: {{ toYaml .Values.bootstrapCustom | indent 2 }}
 {{ (.Files.Glob "scripts/bootstrap.sh").AsConfig | indent 2 }}
+

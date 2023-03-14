@@ -20,5 +20,8 @@ fi
 echo "Copying custom plugins"
 cp -r /mnt/plugins/. /home/rundeck/libext
 
+echo "Executing custom bootstrap script"
+/bin/bash /custom-scripts/bootstrap-custom.sh
+
 echo "Continue with common bootstrap"
 exec /home/rundeck/docker-lib/entry.sh
