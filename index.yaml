@@ -1,0 +1,95 @@
+apiVersion: v1
+entries:
+  iperf3:
+  - apiVersion: v2
+    appVersion: 3.0.0
+    created: "2023-03-15T12:39:55.776763+01:00"
+    description: IPerf3 server to benchmark kubernetes networking
+    digest: 6091bd8e7580d6301aafed3951014ed10fd19dfb32f937bc6661c34e0630d7ff
+    home: https://iperf.fr/iperf-download.php
+    keywords:
+    - benchmark
+    - network
+    - tools
+    name: iperf3
+    sources:
+    - https://github.com/EugenMayer/helm-charts/tree/main/charts/iperf3
+    urls:
+    - https://iamnicolasvdb.github.io/helm-charts/iperf3-0.2.1.tgz
+    version: 0.2.1
+  nist-data-mirror:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-03-15T12:39:55.777017+01:00"
+    description: NIST data mirror
+    digest: 1a9cc88d385b6e26f4e1df4ca97441cafd8bbd69c1318727becf70924ee60e86
+    home: https://github.com/EugenMayer/nist-data-mirror
+    keywords:
+    - network
+    - tools
+    - development
+    name: nist-data-mirror
+    sources:
+    - https://github.com/EugenMayer/helm-charts/tree/main/charts/nist-data-mirror
+    urls:
+    - https://iamnicolasvdb.github.io/helm-charts/nist-data-mirror-0.1.2.tgz
+    version: 0.1.2
+  openldap-test:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-03-15T12:39:55.777248+01:00"
+    description: OpenLdap test / example server
+    digest: 43b495615fc1474b14507ce3c3d444d88955e8da36b7b117b90284298c8b3dca
+    home: https://github.com/EugenMayer/docker-image-ldapexample
+    keywords:
+    - benchmark
+    - network
+    - tools
+    - directory
+    - test
+    name: openldap-test
+    sources:
+    - https://github.com/EugenMayer/helm-charts/tree/main/charts/openldap-test
+    urls:
+    - https://iamnicolasvdb.github.io/helm-charts/openldap-test-0.0.5.tgz
+    version: 0.0.5
+  postgres-pgdump-backup:
+  - apiVersion: v2
+    appVersion: v0.0.0
+    created: "2023-03-15T12:39:55.777596+01:00"
+    description: Backup postgres databases using pg_dump, retention and schedules
+    digest: e01db954bace2486739b22137bb7cab012a1fe199ebf77303fe8ab6e60979a2a
+    home: https://github.com/prodrigestivill/docker-postgres-backup-local
+    keywords:
+    - postgres
+    - backup
+    - retention
+    - pg_dump
+    name: postgres-pgdump-backup
+    sources:
+    - https://github.com/EugenMayer/helm-charts/chats/postgres-pgdump-backup
+    - https://github.com/prodrigestivill/docker-postgres-backup-local
+    type: application
+    urls:
+    - https://iamnicolasvdb.github.io/helm-charts/postgres-pgdump-backup-0.4.6.tgz
+    version: 0.4.6
+  rundeck:
+  - apiVersion: v2
+    appVersion: 4.10.1
+    created: "2023-03-15T12:39:55.778286+01:00"
+    description: Rundeck chart for Kubernetes
+    digest: d74fa4a2585eae34cb654daadabf99cede0610b567046a2b02a5e965db2c3d62
+    home: https://github.com/rundeck/rundeck
+    keywords:
+    - rundeck
+    - jobs
+    - automation
+    - operations
+    name: rundeck
+    sources:
+    - https://github.com/EugenMayer/helm-charts/tree/main/charts/rundeck
+    - https://github.com/rundeck/rundeck
+    urls:
+    - https://iamnicolasvdb.github.io/helm-charts/rundeck-1.5.2.tgz
+    version: 1.5.2
+generated: "2023-03-15T12:39:55.776427+01:00"
