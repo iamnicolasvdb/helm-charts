@@ -123,21 +123,29 @@ spec:
           {{- if .Values.rundeck.rundeckFrameworkConfigMap }}
           - name: framework-append
             mountPath: /home/rundeck/custom/framework
-          {{- end }}          
+          {{- end }}     
+          {{- if .Values.rundeck.livenessProbe.enabled }}    
           livenessProbe:
             httpGet:  
               path: /
               port: 4440
               scheme: HTTP
-            initialDelaySeconds: 120
-            periodSeconds: 5
+            initialDelaySeconds: {{ .Values.rundeck.livenessProbe.initialDelaySeconds }}
+            periodSeconds: {{ .Values.rundeck.livenessProbe.periodSeconds }}
+            timeoutSeconds: {{ .Values.rundeck.livenessProbe.timeoutSeconds }}
+            successThreshold: {{ .Values.rundeck.livenessProbe.successThreshold }}
+          {{- end }}
+          {{- if .Values.rundeck.readinessProbe.enabled }}
           readinessProbe:
             httpGet:
               path: /
               port: 4440
               scheme: HTTP
-            initialDelaySeconds: 60
-            periodSeconds: 5
+            initialDelaySeconds: {{ .Values.rundeck.readinessProbe.initialDelaySeconds }}
+            periodSeconds: {{ .Values.rundeck.readinessProbe.periodSeconds }}
+            timeoutSeconds: {{ .Values.rundeck.readinessProbe.timeoutSeconds }}
+            successThreshold: {{ .Values.rundeck.readinessProbe.successThreshold }}
+          {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- if .Values.nodeSelector }}

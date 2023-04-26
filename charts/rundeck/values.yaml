@@ -121,6 +121,22 @@ rundeck:
   # This can be useful for populating a file you reference with RUNDECK_TOKENS_FILE above.
   # extraConfigSecret: "extra-secret"
 
+  # Configure Kubernetes liveness and readiness probes.
+  # Ref: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
+  livenessProbe:
+    enabled: true
+    initialDelaySeconds: 120
+    timeoutSeconds: 1
+    periodSeconds: 5
+    successThreshold: 1
+
+  readinessProbe:
+    enabled: true
+    initialDelaySeconds: 120
+    timeoutSeconds: 5
+    periodSeconds: 5
+    successThreshold: 1
+
 nameOverride: ""
 fullnameOverride: ""
 
