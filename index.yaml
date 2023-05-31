@@ -3,9 +3,9 @@ entries:
   iperf3:
   - apiVersion: v2
     appVersion: 3.0.0
-    created: "2023-04-26T17:39:01.827161+02:00"
+    created: "2023-05-31T12:58:41.907385+02:00"
     description: IPerf3 server to benchmark kubernetes networking
-    digest: e1e83ed4bdd7a1bf90af3d835ad55ce8bb01970c91a7bb7f9f30a81e6917150a
+    digest: e64b5311c78c6867f5960fd14fd99861a5735f90314114c0594ebb32f9cb8491
     home: https://iperf.fr/iperf-download.php
     keywords:
     - benchmark
@@ -20,9 +20,9 @@ entries:
   nist-data-mirror:
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2023-04-26T17:39:01.827328+02:00"
+    created: "2023-05-31T12:58:41.90754+02:00"
     description: NIST data mirror
-    digest: ecfc275bc4358786388d0d020bc82b710384f20aefdcd85ee4e1a9ab26491e1b
+    digest: d7b82bfc13a09e739bea5bee99b23bd7c1bc8f1404eae1d6ef94d54abed094d5
     home: https://github.com/EugenMayer/nist-data-mirror
     keywords:
     - network
@@ -37,9 +37,9 @@ entries:
   openldap-test:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-04-26T17:39:01.827515+02:00"
+    created: "2023-05-31T12:58:41.90772+02:00"
     description: OpenLdap test / example server
-    digest: b225df3630e1280b447dc448697cf752e632b812eb46fbe92f35706fef207262
+    digest: 5f417aac6e498285c8a4518f67d8899ad51fbcdf764bce29bfc9b8737c01cb8a
     home: https://github.com/EugenMayer/docker-image-ldapexample
     keywords:
     - benchmark
@@ -56,9 +56,9 @@ entries:
   postgres-pgdump-backup:
   - apiVersion: v2
     appVersion: v0.0.0
-    created: "2023-04-26T17:39:01.827847+02:00"
+    created: "2023-05-31T12:58:41.908059+02:00"
     description: Backup postgres databases using pg_dump, retention and schedules
-    digest: 51e4b2bac0b68152e64ff599bee6eeb442552dd86cf7e7a777163051e3e89924
+    digest: cf95596fcf0bcffe50b692df02044d909e8c67fb2a504962941b893f6457f8f0
     home: https://github.com/prodrigestivill/docker-postgres-backup-local
     keywords:
     - postgres
@@ -76,7 +76,25 @@ entries:
   rundeck:
   - apiVersion: v2
     appVersion: 4.10.1
-    created: "2023-04-26T17:39:01.829488+02:00"
+    created: "2023-05-31T12:58:41.912404+02:00"
+    description: Rundeck chart for Kubernetes
+    digest: 895f0e98b8dcfbad821378bbf9d81c791ef2ea70d8fab02b7abe8da1f03224ef
+    home: https://github.com/rundeck/rundeck
+    keywords:
+    - rundeck
+    - jobs
+    - automation
+    - operations
+    name: rundeck
+    sources:
+    - https://github.com/EugenMayer/helm-charts/tree/main/charts/rundeck
+    - https://github.com/rundeck/rundeck
+    urls:
+    - https://iamnicolasvdb.github.io/helm-charts/rundeck-1.5.4.tgz
+    version: 1.5.4
+  - apiVersion: v2
+    appVersion: 4.10.1
+    created: "2023-05-31T12:58:41.910535+02:00"
     description: Rundeck chart for Kubernetes
     digest: 43dc37f94555e3fa22311f4dc6cff4f3da0618887d6db7bb098008bfa23b4d15
     home: https://github.com/rundeck/rundeck
@@ -94,7 +112,7 @@ entries:
     version: 1.5.3
   - apiVersion: v2
     appVersion: 4.10.1
-    created: "2023-04-26T17:39:01.828787+02:00"
+    created: "2023-05-31T12:58:41.909646+02:00"
     description: Rundeck chart for Kubernetes
     digest: 7447e4b00bb8a92e2891249119dd122bec781433c65cda781f4db456a99b0c46
     home: https://github.com/rundeck/rundeck
@@ -110,4 +128,4 @@ entries:
     urls:
     - https://iamnicolasvdb.github.io/helm-charts/rundeck-1.5.2.tgz
     version: 1.5.2
-generated: "2023-04-26T17:39:01.826484+02:00"
+generated: "2023-05-31T12:58:41.907021+02:00"

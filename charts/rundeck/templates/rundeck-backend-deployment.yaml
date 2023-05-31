@@ -111,6 +111,10 @@ spec:
           - name: extra-config
             mountPath: /home/rundeck/extra/
           {{- end }}
+          {{- if .Values.rundeck.extraConfigScripts }}
+          - name: extra-scripts
+            mountPath: /home/rundeck/scripts/
+          {{- end }}
           {{- if .Values.rundeck.userCredentialsSecretName }}
           - name: user-credentials
             mountPath: /home/rundeck/server/config/realm.properties
@@ -219,6 +223,11 @@ spec:
         - name: extra-config
           secret:
             secretName: {{ .Values.rundeck.extraConfigSecret}}
+        {{- end }}
+        {{- if .Values.rundeck.extraConfigScripts }}
+        - name: extra-scripts
+          configMap:
+            name: {{ .Values.rundeck.extraConfigScripts}}
         {{- end }}
         {{- if .Values.rundeck.userCredentialsSecretName }}
         - name: user-credentials
